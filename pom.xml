@@ -24,6 +24,7 @@
 
         <lombokVersion>1.18.24</lombokVersion>
         <junitJupiterApiVersion>5.9.1</junitJupiterApiVersion>
+        <junitJupiterParamsVersion>5.9.1</junitJupiterParamsVersion>
         <assertjCoreVersion>3.23.1</assertjCoreVersion>
     </properties>
 
@@ -39,6 +40,13 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>${junitJupiterApiVersion}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junitJupiterParamsVersion}</version>
             <scope>test</scope>
         </dependency>
 

@@ -20,7 +20,11 @@ public class RangeWithStep extends Range {
     }
 
     class RangeWithStepIterator implements Iterator<Integer> {
-        private int current = -step;
+        private int current;
+
+        public RangeWithStepIterator() {
+            current = -step;
+        }
 
         @Override
         public boolean hasNext() {
